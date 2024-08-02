@@ -10,9 +10,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { format } from 'date-fns';
 import { FaRegBell } from 'react-icons/fa';
 const user = {
-  name: 'Medical center Clinic',
-  email: 'medicalcenter@gmail.com',
-  imageUrl: './src/assets/pexels-pixabay-415829.jpg',
+  name: '',
+  email: '',
+  imageUrl: '/pexels-pixabay-415829.jpg',
 };
 
 const userNavigation = [
@@ -55,11 +55,11 @@ function AdminNavbar({ sidebarOpen, setSidebarOpen }) {
           <img
             src={
               sidebarOpen
-                ? './src/assets/Capture.JPG'
-                : './src//assets/Capture.JPG'
+                ? '/Capture.JPG'
+                : '/Capture.JPG'
             }
             className="w-[170px]"
-            alt="Medical Center Clinic Logo"
+            alt=""
           />
         </div>
         <div
