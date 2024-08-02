@@ -7,12 +7,11 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-    // After successful login, navigate to the appropriate dashboard based on the role
+    // Redirect to the appropriate URL based on the role
     if (role === 'user') {
-      navigate('/user-dashboard');
+      window.location.href = 'https://skills-match-dashboard.vercel.app/home';
     } else {
-      navigate('/employer-dashboard');
+      window.location.href = 'https://skills-match-dashboard.vercel.app/employer';
     }
   };
 
